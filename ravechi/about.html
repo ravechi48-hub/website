@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Ravechi Enterprise Pvt. Ltd.</title>
+  <meta name="description" content="Ravechi Enterprise — Your Trusted Supply Partner Since 2007. Stationery, Office Essentials & Technology Solutions in Vadodara, Gujarat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css?v=3.0">
+  <style>
+    /* Brand Marquee - Strict Horizontal Arrangement */
+    .brands-marquee {
+      position: relative !important;
+      overflow: hidden !important;
+      width: 100% !important;
+      padding-block: 1.5rem !important;
+      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%) !important;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%) !important;
+    }
+    .brands-marquee__track {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: center !important;
+      gap: 1.75rem !important;
+      width: max-content !important;
+      min-width: max-content !important;
+      animation: brandsScroll 24s linear infinite !important;
+      will-change: transform !important;
+    }
+    .brands-marquee:hover .brands-marquee__track {
+      animation-play-state: paused !important;
+    }
+    @keyframes brandsScroll {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+    .brand-card {
+      flex: 0 0 176px !important;
+      width: 176px !important;
+      min-width: 176px !important;
+      max-width: 176px !important;
+      height: 96px !important;
+      background: #ffffff !important;
+      border: 1px solid #dde6f0 !important;
+      border-radius: 0.9rem !important;
+      padding: 0.75rem 1.25rem !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 4px 14px rgba(10, 36, 99, 0.05) !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s !important;
+      cursor: pointer !important;
+      user-select: none !important;
+      box-sizing: border-box !important;
+    }
+    .brand-card img {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      width: auto !important;
+      height: auto !important;
+      object-fit: contain !important;
+      display: block !important;
+      margin: 0 auto !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .brand-card:hover {
+      transform: translateY(-5px) scale(1.04) !important;
+      box-shadow: 0 12px 28px rgba(21, 101, 192, 0.18) !important;
+      border-color: rgba(21, 101, 192, 0.4) !important;
+    }
+    .brand-card:hover img {
+      transform: scale(1.06) !important;
+    }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230a2463'/><text y='.9em' font-size='70' x='10' fill='white' font-family='Arial' font-weight='900'>R</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="header-inner" id="header-inner">
+        <a class="site-logo" href="index.html" aria-label="Ravechi Enterprise – Home">
+          <img class="site-logo__img" src="logo.jpg" alt="Ravechi Enterprise logo" width="56" height="56">
+          <div class="site-logo__text-wrap">
+            <span class="site-logo__name">Ravechi Enterprise</span>
+            <span class="site-logo__sub">Pvt. Ltd.</span>
+          </div>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="menu-button" type="button" popovertarget="site-menu" popovertargetaction="toggle" aria-controls="site-menu" aria-expanded="false">
+            <svg class="menu-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+            <span>Menu</span>
+          </button>
+          <ul id="site-menu" class="site-menu" popover="auto" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="margin-inline-start:.5rem"><a href="contact.html" class="btn btn--primary">Get a Quote ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="about-hero-title">
+      <div class="container">
+        <span class="page-eyebrow">Our Story</span>
+        <h1 class="page-hero__title" id="about-hero-title">Your Trusted Supply Partner<br>Since 2007</h1>
+        <p class="page-hero__sub">Your Reliable Partner for Stationery, Office Essentials &amp; Technology Solutions in Gujarat.</p>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="stat-row stagger-children">
+          <div class="stat">
+            <span class="stat__num" data-target="17" data-suffix="+">0</span>
+            <span class="stat__label">Years of Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="500" data-suffix="+">0</span>
+            <span class="stat__label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="5" data-suffix="">0</span>
+            <span class="stat__label">Top Brands Stocked</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="1000" data-suffix="+">0</span>
+            <span class="stat__label">Products Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT INTRO -->
+    <section class="section" aria-labelledby="about-intro-title">
+      <div class="container">
+        <div class="about-intro">
+          <div class="reveal-left">
+            <span class="section-label">🏢 Who We Are</span>
+            <h2 style="font-family:var(--font-heading);font-size:clamp(1.75rem,3.5vw,2.5rem);color:var(--clr-brand);margin-block:0.6rem 1rem;letter-spacing:-.03em" id="about-intro-title">About Ravechi Enterprise</h2>
+            <p style="margin-block-end:1rem;color:var(--clr-text-muted);line-height:1.8;font-size:.97rem">
+              Ravechi Enterprise Pvt. Ltd. is a trusted name in Vadodara, Gujarat, supplying quality products to schools, universities, corporates and households since 2007.
+            </p>
+            <p style="margin-block-end:1.75rem;color:var(--clr-text-muted);line-height:1.8;font-size:.97rem">
+              With a comprehensive product portfolio spanning computers and peripherals, office stationery, toners, printers, digital printing services and housekeeping supplies, Ravechi is a true one-stop shop for all institutional and business supply needs.
+            </p>
+            <div class="mission-box">
+              <p><strong>Our Mission:</strong> To provide our customers with the best quality products at the right price, with excellent service and timely delivery — making us the most dependable supply partner in the region.</p>
+            </div>
+          </div>
+          <div class="about-intro__visual reveal-right">
+            <div style="position:relative;z-index:1">
+              <h3 style="font-size:1.35rem;margin-block-end:.8rem">Your One-Stop Shop for Quality Products &amp; Services</h3>
+              <p style="opacity:.88;font-size:.91rem;line-height:1.75;margin-block-end:1.5rem">Serving a wide range of clients including government institutions, private schools, colleges, MNCs and small businesses across Gujarat.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:.85rem">
+                <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:.6rem;padding:1rem;text-align:center;transition:transform .3s;cursor:default" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform=''">
+                  <div style="font-size:1.6rem">🎓</div>
+                  <div style="font-size:.82rem;margin-block-start:.4rem;font-weight:600">Schools &amp; Universities</div>
+                </div>
+                <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:.6rem;padding:1rem;text-align:center;transition:transform .3s;cursor:default" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform=''">
+                  <div style="font-size:1.6rem">🏢</div>
+                  <div style="font-size:.82rem;margin-block-start:.4rem;font-weight:600">Corporates &amp; MNCs</div>
+                </div>
+                <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:.6rem;padding:1rem;text-align:center;transition:transform .3s;cursor:default" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform=''">
+                  <div style="font-size:1.6rem">🏠</div>
+                  <div style="font-size:.82rem;margin-block-start:.4rem;font-weight:600">Households</div>
+                </div>
+                <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:.6rem;padding:1rem;text-align:center;transition:transform .3s;cursor:default" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform=''">
+                  <div style="font-size:1.6rem">🏪</div>
+                  <div style="font-size:.82rem;margin-block-start:.4rem;font-weight:600">Small Businesses</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section section--alt" id="categories" aria-labelledby="cats-title">
+      <div class="container">
+        <div style="text-align:center;margin-block-end:2.5rem" class="reveal">
+          <span class="section-label">📦 Product Range</span>
+          <h2 class="section-title" id="cats-title">Our Product Categories</h2>
+          <p class="section-sub">A comprehensive range of products for every business and institutional need.</p>
+        </div>
+        <div class="categories-grid stagger-children">
+          <div class="cat-card"><div class="cat-card__icon">💻</div><h3 class="cat-card__title">Computers &amp; Peripherals</h3><p class="cat-card__desc">Desktops, laptops, keyboards, mice, monitors and IT accessories from leading brands.</p></div>
+          <div class="cat-card"><div class="cat-card__icon">📋</div><h3 class="cat-card__title">Officeware &amp; Stationery</h3><p class="cat-card__desc">Files, folders, pens, paper, notebooks and all office essentials in bulk supply.</p></div>
+          <div class="cat-card"><div class="cat-card__icon">🖨️</div><h3 class="cat-card__title">Toners &amp; Printers</h3><p class="cat-card__desc">Genuine toner cartridges, inkjet refills and printers from top brands.</p></div>
+          <div class="cat-card"><div class="cat-card__icon">🎨</div><h3 class="cat-card__title">Digital Printing Services</h3><p class="cat-card__desc">High-quality digital prints for offices, institutes and businesses of all sizes.</p></div>
+          <div class="cat-card"><div class="cat-card__icon">🧹</div><h3 class="cat-card__title">Housekeeping Supplies</h3><p class="cat-card__desc">Cleaning products, hygiene essentials and facility management supplies.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="section" aria-labelledby="brands-title2">
+      <div class="container">
+        <div style="text-align:center;margin-block-end:2.5rem" class="reveal">
+          <span class="section-label">🏆 Authorised Supplier</span>
+          <h2 class="section-title" id="brands-title2">Brands We Carry</h2>
+          <p class="section-sub">We exclusively stock genuine products from top brands including 3M, Canon, Casio, Camlin, Classmate &amp; Pidilite.</p>
+        </div>
+        <div class="brands-marquee reveal" style="position:relative;overflow:hidden;width:100%;padding:1.5rem 0;">
+          <div class="brands-marquee__track" style="display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;align-items:center !important;width:max-content !important;gap:1.75rem !important;">
+            <!-- Set 1 -->
+            <div class="brand-card"><img src="brands/3m.png" alt="3M logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/canon.png" alt="Canon logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/casio.png" alt="Casio logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/camlin.png" alt="Camlin logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/classmate.png" alt="Classmate logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/pidilite.png" alt="Pidilite logo" width="176" height="94" loading="lazy"></div>
+
+            <!-- Set 2 -->
+            <div class="brand-card"><img src="brands/3m.png" alt="3M logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/canon.png" alt="Canon logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/casio.png" alt="Casio logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/camlin.png" alt="Camlin logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/classmate.png" alt="Classmate logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/pidilite.png" alt="Pidilite logo" width="176" height="94" loading="lazy"></div>
+
+            <!-- Set 3 -->
+            <div class="brand-card"><img src="brands/3m.png" alt="3M logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/canon.png" alt="Canon logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/casio.png" alt="Casio logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/camlin.png" alt="Camlin logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/classmate.png" alt="Classmate logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/pidilite.png" alt="Pidilite logo" width="176" height="94" loading="lazy"></div>
+
+            <!-- Set 4 -->
+            <div class="brand-card"><img src="brands/3m.png" alt="3M logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/canon.png" alt="Canon logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/casio.png" alt="Casio logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/camlin.png" alt="Camlin logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/classmate.png" alt="Classmate logo" width="176" height="94" loading="lazy"></div>
+            <div class="brand-card"><img src="brands/pidilite.png" alt="Pidilite logo" width="176" height="94" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="section section--alt" aria-labelledby="why-title2">
+      <div class="container">
+        <div style="text-align:center;margin-block-end:2.5rem" class="reveal">
+          <span class="section-label">⭐ Our Advantage</span>
+          <h2 class="section-title" id="why-title2">Why Choose Ravechi?</h2>
+          <p class="section-sub">We go beyond just supplying — we build long-term partnerships.</p>
+        </div>
+        <div class="why-grid stagger-children">
+          <div class="why-card" data-num="✓"><div class="why-card__badge" style="background:linear-gradient(135deg,#43a047,#2e7d32)">✓</div><h3 class="why-card__title">Complete Range Under One Roof</h3><p class="why-card__desc">Save time and money by sourcing all your supply needs from a single trusted vendor.</p></div>
+          <div class="why-card" data-num="✓"><div class="why-card__badge" style="background:linear-gradient(135deg,#43a047,#2e7d32)">✓</div><h3 class="why-card__title">17+ Years of Expertise</h3><p class="why-card__desc">Decades of experience means you benefit from deep product knowledge and industry connections.</p></div>
+          <div class="why-card" data-num="✓"><div class="why-card__badge" style="background:linear-gradient(135deg,#43a047,#2e7d32)">✓</div><h3 class="why-card__title">Only Genuine Products</h3><p class="why-card__desc">Every product is sourced directly from authorized distributors and manufacturers.</p></div>
+          <div class="why-card" data-num="✓"><div class="why-card__badge" style="background:linear-gradient(135deg,#43a047,#2e7d32)">✓</div><h3 class="why-card__title">Ready Stock &amp; Fast Delivery</h3><p class="why-card__desc">Minimal waiting time with large in-stock inventory and prompt delivery across Vadodara.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal-scale">
+          <div>
+            <h2 class="cta-banner__title">Partner with Ravechi Today</h2>
+            <p class="cta-banner__sub">Call us or leave a message and our team will get back to you promptly.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="tel:+919879116687" class="btn btn--glass">📞 +91 98791 16687</a>
+            <a href="contact.html" class="btn btn--primary">Contact Us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="display:inline-flex;align-items:center;gap:.6rem;text-decoration:none">
+            <img class="footer-logo-img" src="logo.jpg" alt="" aria-hidden="true">
+            <div><div class="footer-logo-name">Ravechi Enterprise</div><div class="footer-logo-sub">Pvt. Ltd.</div></div>
+          </a>
+          <p class="footer-brand__desc">Your one-stop supply partner for quality stationery, office essentials &amp; technology solutions since 2007.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Navigation</h3>
+          <ul class="footer-col__list" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Products</h3>
+          <ul class="footer-col__list" role="list">
+            <li><a href="#categories">Computers &amp; Peripherals</a></li>
+            <li><a href="#categories">Office Stationery</a></li>
+            <li><a href="#categories">Toners &amp; Printers</a></li>
+            <li><a href="#categories">Digital Printing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Contact</h3>
+          <div class="footer-contact-line"><span>📍</span><span>GF - 14/15, Silver Line Complex, Sayajigunj, Vadodara - 390005</span></div>
+          <div class="footer-contact-line"><span>📞</span><a href="tel:+919879116687">+91 98791 16687</a></div>
+          <div class="footer-contact-line"><span>✉️</span><a href="mailto:ravechi53@gmail.com">ravechi53@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom-wrap">
+        <div class="footer-bottom">
+          <span>© <span id="yr"></span> Ravechi Enterprise Pvt. Ltd. All rights reserved.</span>
+          <span>Sayajigunj, Vadodara, Gujarat, India</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    if (!Object.hasOwn(HTMLElement.prototype, 'popover')) {
+      import('https://unpkg.com/@oddbird/popover-polyfill@latest/dist/popover.min.js');
+    }
+    const header = document.getElementById('site-header');
+    const inner  = document.getElementById('header-inner');
+    const menu   = document.getElementById('site-menu');
+    const menuBtn = document.querySelector('.menu-button');
+    function syncNav() {
+      header.classList.add('is-wide'); menu.removeAttribute('popover');
+      requestAnimationFrame(() => {
+        if (inner.scrollWidth > inner.clientWidth) { header.classList.remove('is-wide'); menu.setAttribute('popover','auto'); }
+      });
+    }
+    new ResizeObserver(syncNav).observe(header);
+    menu.addEventListener('toggle', e => menuBtn?.setAttribute('aria-expanded', e.newState === 'open' ? 'true' : 'false'));
+
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger-children').forEach(el => revealObs.observe(el));
+
+    function animateCounter(el, target, suffix, duration = 1600) {
+      const start = performance.now();
+      (function step(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const e = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
+        el.textContent = Math.floor(e * target) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      })(start);
+    }
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.querySelectorAll('[data-target]').forEach(el => animateCounter(el, +el.dataset.target, el.dataset.suffix || ''));
+        counterObs.unobserve(e.target);
+      });
+    }, { threshold: 0.4 });
+    const statRow = document.querySelector('.stat-row');
+    if (statRow) counterObs.observe(statRow);
+  </script>
+</body>
+</html>
